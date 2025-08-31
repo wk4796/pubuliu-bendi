@@ -63,6 +63,15 @@
     "dateAdded": "2025-08-31"
   },
   {
+    "src": "images/anime/3.jpg",
+    "category": "anime",
+    "categoryName": "二次元",
+    "filename": "3.jpg",
+    "width": 1414,
+    "height": 1000,
+    "dateAdded": "2025-08-31"
+  },
+  {
     "src": "images/anime/234423.jpg",
     "category": "anime",
     "categoryName": "二次元",
@@ -72,12 +81,12 @@
     "dateAdded": "2025-08-31"
   },
   {
-    "src": "images/anime/3.jpg",
+    "src": "images/anime/2023-08-22 231830_爱奇艺.jpg",
     "category": "anime",
     "categoryName": "二次元",
-    "filename": "3.jpg",
-    "width": 1414,
-    "height": 1000,
+    "filename": "2023-08-22 231830_爱奇艺.jpg",
+    "width": 5760,
+    "height": 8192,
     "dateAdded": "2025-08-31"
   },
   {
