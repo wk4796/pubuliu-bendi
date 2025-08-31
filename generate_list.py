@@ -8,7 +8,7 @@ IMAGE_DIR = 'images'  # 图片存放的根目录
 OUTPUT_DIR = 'data'   # JSON 输出目录
 OUTPUT_FILE = 'image-data.json' # JSON 文件名
 
-# --- 新增：排序时间依据配置 ---
+# --- 排序时间依据配置 ---
 # 您可以在这里选择排序依据：
 # 'modification' -> 按文件修改时间排序 (推荐, 能准确反映图片内容何时被最后编辑)
 # 'creation'     -> 按文件创建时间排序 (Windows下准确,但在Linux/Mac下可能不符合直觉)
@@ -46,7 +46,7 @@ def generate_image_data():
                 if filename.lower().endswith(('.png', '.jpg', '.jpeg', '.gif', '.webp')):
                     image_path_full = os.path.join(category_path, filename)
                     try:
-                        # --- 修改：根据配置选择获取哪种时间戳 ---
+                        # 根据配置选择获取哪种时间戳
                         if SORT_BY_TIME == 'creation':
                             timestamp = os.path.getctime(image_path_full)
                         else: # 默认为 modification
@@ -65,8 +65,9 @@ def generate_image_data():
             with Image.open(image_path_full) as img:
                 width, height = img.size
             
-            # 使用获取到的时间戳来生成日期字符串，确保与排序依据一致
-            date_added = datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d')
+            # ---【关键修改】---
+            # 修改了日期格式，加入了时:分:秒，以保留完整的时间信息
+            date_added = datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S')
 
         except Exception as e:
             print(f"Warning: Could not process file {image_path_full}. Error: {e}")
