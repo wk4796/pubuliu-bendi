@@ -36,15 +36,6 @@
     "dateAdded": "2025-08-31"
   },
   {
-    "src": "images/anime/4.jpg",
-    "category": "anime",
-    "categoryName": "二次元",
-    "filename": "4.jpg",
-    "width": 1300,
-    "height": 922,
-    "dateAdded": "2025-08-31"
-  },
-  {
     "src": "images/anime/5.jpg",
     "category": "anime",
     "categoryName": "二次元",
@@ -54,12 +45,12 @@
     "dateAdded": "2025-08-31"
   },
   {
-    "src": "images/anime/234423.jpg",
+    "src": "images/anime/4.jpg",
     "category": "anime",
     "categoryName": "二次元",
-    "filename": "234423.jpg",
-    "width": 3479,
-    "height": 7065,
+    "filename": "4.jpg",
+    "width": 1300,
+    "height": 922,
     "dateAdded": "2025-08-31"
   },
   {
@@ -69,6 +60,15 @@
     "filename": "3.jpg",
     "width": 1414,
     "height": 1000,
+    "dateAdded": "2025-08-31"
+  },
+  {
+    "src": "images/anime/234423.jpg",
+    "category": "anime",
+    "categoryName": "二次元",
+    "filename": "234423.jpg",
+    "width": 3479,
+    "height": 7065,
     "dateAdded": "2025-08-31"
   },
   {
